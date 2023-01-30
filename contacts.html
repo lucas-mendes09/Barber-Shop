@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cut For Me - Barber Shop</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <h1 class="logo">
+          <img
+            class="logo"
+            src="public/images/barber-logo.png"
+            alt="Cut For Me - Barber Shop logo"
+          />
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form>
+        <label for="firstandlastname">First and Last Name</label>
+        <input
+          type="text"
+          id="firstandlastname"
+          class="standard-input"
+          required
+          placeholder="Ex. Ben Anderson"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="standard-input"
+          required
+          placeholder="yourfavoriteemail@domain.com"
+        />
+
+        <label for="number">Number</label>
+        <input
+          type="tel"
+          id="number"
+          class="standard-input"
+          required
+          placeholder="(XX) XXXXX-XXXX"
+        />
+
+        <label for="messages">Messages</label>
+        <textarea
+          cols="70"
+          rows="10"
+          id="messages"
+          class="standard-input"
+          required
+          placeholder="Type your message here..."
+        ></textarea>
+
+        <fieldset>
+          <legend>How do you prefer our contact?</legend>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contact"
+              value="email"
+              id="radio-email"
+            />
+            Email</label
+          >
+
+          <label for="radio-telephone"
+            ><input
+              type="radio"
+              name="contact"
+              value="telephone"
+              id="radio-telephone"
+              checked
+            />
+            Telephone</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />
+            WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>What time do you prefer to book you appointment?</legend>
+          <select>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Night</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox"
+          ><input type="checkbox" checked />Would you like to receive our news
+          in your email?</label
+        >
+
+        <input type="submit" value="Send Booking" class="send" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Schedule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>8am ~ 8pm</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>8am ~ 8pm</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>8am ~ 8pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img
+        class="logo"
+        src="public/images/barber-logo.png"
+        alt="Cut For Me - Barber Shop logo"
+      />
+      <p class="copyright">
+        &copy; 2023 <br />
+        Cut For Me - Barber Shop
+      </p>
+    </footer>
+  </body>
+</html>
